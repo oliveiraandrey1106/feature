@@ -16,7 +16,7 @@ Funcionalidade: Autenticação
  
         Esquema do Cenário: Realizar Login Exception
             Quando realizar login com "<email>" e "<senha>"
-            Então deverá ser exibida a mensagem de erro "<mensagem>"
+            Então deverá ser exibida a mensagem de erro "<mensagem>" 
  
             Exemplos:
                | email              | senha     | mensagem                 |
@@ -24,20 +24,19 @@ Funcionalidade: Autenticação
 
  
         Esquema do Cenário: Realizar Cadastro
-            Quando realizar cadastro com "<email>" e "<senha>" e "<cpf>" e "<rg>"
+            Quando realizar cadastro com "<email>"
             Então deverá ser exibido "<mensagem>"
  
             Exemplos:
-                | email             | senha    | cpf       | rg        | mensagem           | 
-                | test@teste        | 12345    | 292842157 | 152124565 | cadastro realizado |
+                | email             | senha    | mensagem           | 
+                | test@teste        | 12345    | cadastro realizado |
  
         Esquema do Cenário: Realizar Cadastro Exception
-            Quando realizar cadastro com "<email>" e "<senha>" e "<cpf>" e "<rg>"
-            Então deverá ser exibida a mensagem de erro "<mensagem>"
+            Quando realizar cadastro com "<email>"
+            Então deverá ser exibida a mensagem de erro "<mensagem>" 
  
             Exemplos:
                 | email              | senha     | mensagem                                                     |
                 | test@teste         | 12345     | Email ja cadastrado, verifique seus dados e tente novamente  |
                 | teste@testando     | 123456    | Cadastro não pode ser realizado, verifique seus dados        |
-                | cpf                | 292842157 | Cpf informado ja esta cadastrado                             |
-                | rg                 | 152124565 | RG informado ja esta cadastrado                              | 
+              

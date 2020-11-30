@@ -29,7 +29,7 @@ Funcionalidade: Produto
             E adicionar ao carrinho
             Então deverá ser exibido o produto no carrinho
 
-        Cenário: Seleção de produto pela sugestão >>>> "DUVIDA!! promoções sugeridas?"
+        Cenário: Seleção de produto pela sugestão
             Quando pesquisar na barra de busca o produto 'Colonia'
             E acessar a pagina do produto sugerido
             E adicionar ao carrinho
